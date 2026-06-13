@@ -16,7 +16,11 @@ export function ContactFormSection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
-    await new Promise((r) => setTimeout(r, 800))
+    await fetch('https://functions.poehali.dev/6c7885be-c8d0-4047-af17-90fb23d43154', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(form)
+    })
     setLoading(false)
     setSent(true)
   }
