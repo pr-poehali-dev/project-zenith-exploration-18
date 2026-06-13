@@ -10,7 +10,7 @@ export function Footer() {
             <img
               src="https://cdn.poehali.dev/projects/63046c27-a9ca-47f8-936d-0a1da38c83de/bucket/b9709859-f173-404c-bbba-66d6fbf50170.jpeg"
               alt="СтройГрей"
-              className="h-12 w-auto mb-4 mix-blend-lighten"
+              className="h-12 w-auto mb-4 rounded-md"
             />
             <p className="font-space-mono text-gray-300 mb-2 max-w-md">
               Строительство и ремонт в Новосибирске и области. Работаем с 2016 года.
