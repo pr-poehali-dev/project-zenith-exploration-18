@@ -1,53 +1,54 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import Icon from "@/components/ui/icon"
 
 const features = [
   {
-    title: "Адаптивная нейрообработка",
-    description: "Самооптимизирующиеся алгоритмы, которые обучаются на нейронных паттернах и улучшают интерпретацию сигналов.",
-    icon: "brain",
-    badge: "ИИ",
+    title: "Официальный статус",
+    description: "Работаем как ООО — заключаем договор, предоставляем акты, счета, чеки. Для юрлиц — полный пакет для бухгалтерии.",
+    icon: "FileCheck",
+    badge: "ООО",
   },
   {
-    title: "Медицинская защита",
-    description: "Шифрование по стандартам FDA со сквозной защитой конфиденциальных нейронных данных.",
-    icon: "lock",
-    badge: "Сертификат",
+    title: "Опыт более 8 лет",
+    description: "Стабильно на рынке с 2016 года. Сотни выполненных объектов — от квартир до крупных застройщиков.",
+    icon: "Award",
+    badge: "С 2016",
   },
   {
-    title: "Интуитивное управление",
-    description: "Естественная трансляция мыслей в действия с откликом менее миллисекунды и точностью 99,7%.",
-    icon: "globe",
-    badge: "Точность",
+    title: "Фиксированная смета",
+    description: "Цена утверждается до начала работ. Никаких скрытых платежей и необоснованного удорожания.",
+    icon: "Calculator",
+    badge: "Гарантия",
   },
   {
-    title: "Предиктивная калибровка",
-    description: "ML-модели, которые предугадывают намерения пользователя и оптимизируют нейронные пути.",
-    icon: "zap",
-    badge: "Умный",
+    title: "Соблюдение сроков",
+    description: "График работ прописывается в договоре и строго контролируется. Задержки — исключение, а не правило.",
+    icon: "Clock",
+    badge: "В срок",
   },
   {
-    title: "Биометрическая интеграция",
-    description: "Бесшовная синхронизация с мониторингом жизненных показателей для контроля здоровья.",
-    icon: "link",
-    badge: "Связь",
+    title: "Контроль качества",
+    description: "Личный прораб на объекте, поэтапная приёмка, фотофиксация скрытых работ на каждом этапе.",
+    icon: "ShieldCheck",
+    badge: "Контроль",
   },
   {
-    title: "Поддержка XR",
-    description: "Нативная совместимость с AR/VR-средами для терапевтических и рабочих приложений.",
-    icon: "target",
-    badge: "XR Ready",
+    title: "Работа по нормам",
+    description: "Все работы соответствуют СНиП, СП, ГОСТ. Профессиональный подход, а не гаражный.",
+    icon: "ClipboardCheck",
+    badge: "ГОСТ",
   },
 ]
 
 export function FeaturesSection() {
   return (
-    <section className="py-24 px-6 bg-background">
+    <section id="advantages" className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Возможности нового поколения</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Почему выбирают СтройГрей</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Почувствуйте будущее с технологиями, которые переопределяют возможное
+            8 лет на рынке, сотни довольных клиентов — частных и корпоративных
           </p>
         </div>
 
@@ -60,14 +61,7 @@ export function FeaturesSection() {
             >
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-3xl">
-                    {feature.icon === "brain" && "&#129504;"}
-                    {feature.icon === "lock" && "&#128274;"}
-                    {feature.icon === "globe" && "&#127760;"}
-                    {feature.icon === "zap" && "&#9889;"}
-                    {feature.icon === "link" && "&#128279;"}
-                    {feature.icon === "target" && "&#127919;"}
-                  </span>
+                  <Icon name={feature.icon} size={32} className="text-red-500" fallback="Star" />
                   <Badge variant="secondary" className="bg-accent text-accent-foreground">
                     {feature.badge}
                   </Badge>
