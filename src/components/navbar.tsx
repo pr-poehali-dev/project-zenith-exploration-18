@@ -14,7 +14,7 @@ export function Navbar() {
             <img
               src="https://cdn.poehali.dev/projects/63046c27-a9ca-47f8-936d-0a1da38c83de/bucket/b9709859-f173-404c-bbba-66d6fbf50170.jpeg"
               alt="СтройГрей"
-              className="h-10 w-auto"
+              className="h-10 w-auto mix-blend-lighten"
             />
           </div>
 
