@@ -18,16 +18,25 @@ export function Footer() {
             <p className="font-space-mono text-gray-300 mb-6 max-w-md">
               Для частных лиц и застройщиков. Официальный договор, фиксированная смета, гарантия.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-red-500 transition-colors duration-200">
-                <Icon name="Phone" size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-red-500 transition-colors duration-200">
-                <Icon name="Mail" size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-red-500 transition-colors duration-200">
-                <Icon name="MessageCircle" size={20} />
-              </a>
+            <div className="space-y-2 mb-4">
+              <div className="flex items-center gap-2">
+                <Icon name="Phone" size={16} className="text-red-500 flex-shrink-0" />
+                <div>
+                  <a href="tel:+79607970002" className="font-space-mono text-white hover:text-red-500 transition-colors text-sm">+7 (960) 797-00-02</a>
+                  <span className="font-space-mono text-gray-500 text-xs ml-2">Главный прораб</span>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <Icon name="Phone" size={16} className="text-red-500 flex-shrink-0" />
+                <div>
+                  <a href="tel:+79665060002" className="font-space-mono text-white hover:text-red-500 transition-colors text-sm">+7 (966) 506-00-02</a>
+                  <span className="font-space-mono text-gray-500 text-xs ml-2">Получить информацию</span>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <Icon name="Mail" size={16} className="text-red-500 flex-shrink-0" />
+                <a href="mailto:stroygrey@mail.ru" className="font-space-mono text-white hover:text-red-500 transition-colors text-sm">stroygrey@mail.ru</a>
+              </div>
             </div>
           </div>
 

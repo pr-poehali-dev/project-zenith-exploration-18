@@ -36,9 +36,17 @@ export function Navbar() {
             </div>
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
-            <Button className="bg-red-500 hover:bg-red-600 text-white font-geist border-0">Получить смету</Button>
+          {/* Phones + CTA */}
+          <div className="hidden md:flex items-center gap-6">
+            <div className="text-right">
+              <a href="tel:+79607970002" className="block font-geist text-white hover:text-red-500 transition-colors text-sm font-semibold">+7 (960) 797-00-02</a>
+              <span className="block font-geist text-gray-400 text-xs">Главный прораб</span>
+            </div>
+            <div className="text-right">
+              <a href="tel:+79665060002" className="block font-geist text-white hover:text-red-500 transition-colors text-sm font-semibold">+7 (966) 506-00-02</a>
+              <span className="block font-geist text-gray-400 text-xs">Получить информацию</span>
+            </div>
+            <Button onClick={() => document.getElementById('contact')?.scrollIntoView({behavior:'smooth'})} className="bg-red-500 hover:bg-red-600 text-white font-geist border-0">Получить смету</Button>
           </div>
 
           {/* Mobile menu button */}
@@ -77,8 +85,12 @@ export function Navbar() {
               >
                 Вопросы
               </a>
+              <div className="px-3 py-2 space-y-1">
+                <a href="tel:+79607970002" className="block font-geist text-white text-sm font-semibold">+7 (960) 797-00-02 <span className="text-gray-400 font-normal">— Главный прораб</span></a>
+                <a href="tel:+79665060002" className="block font-geist text-white text-sm font-semibold">+7 (966) 506-00-02 <span className="text-gray-400 font-normal">— Получить информацию</span></a>
+              </div>
               <div className="px-3 py-2">
-                <Button className="w-full bg-red-500 hover:bg-red-600 text-white font-geist border-0">
+                <Button onClick={() => { setIsOpen(false); document.getElementById('contact')?.scrollIntoView({behavior:'smooth'}) }} className="w-full bg-red-500 hover:bg-red-600 text-white font-geist border-0">
                   Получить смету
                 </Button>
               </div>

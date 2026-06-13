@@ -17,13 +17,15 @@ export function CTASection() {
             >
               Получить бесплатную смету
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground text-lg px-8 py-4 bg-transparent"
-            >
-              Позвонить нам
-            </Button>
+            <a href="tel:+79607970002">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground text-lg px-8 py-4 bg-transparent"
+              >
+                +7 (960) 797-00-02
+              </Button>
+            </a>
           </div>
         </div>
       </div>
