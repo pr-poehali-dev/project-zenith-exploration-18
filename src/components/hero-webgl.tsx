@@ -138,6 +138,17 @@ export const Hero3DWebGL = () => {
 
   return (
     <div className="h-screen bg-black relative overflow-hidden">
+      {/* Логотип фоном */}
+      <div
+        className="absolute inset-0 bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url(https://cdn.poehali.dev/projects/63046c27-a9ca-47f8-936d-0a1da38c83de/bucket/d5281f44-51e2-444c-9099-69040c197646.jpeg)`,
+          backgroundSize: '60%',
+          opacity: 0.15,
+        }}
+      />
+
+      {/* Градиентные края */}
       <div className="absolute inset-0 pointer-events-none z-10">
         <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-black to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent" />
@@ -179,11 +190,11 @@ export const Hero3DWebGL = () => {
         flat
         gl={{
           antialias: true,
-          alpha: false,
+          alpha: true,
           powerPreference: "high-performance",
         }}
         camera={{ position: [0, 0, 1] }}
-        style={{ background: "#000000" }}
+        style={{ background: "transparent" }}
       >
         <Scene />
       </Canvas>
