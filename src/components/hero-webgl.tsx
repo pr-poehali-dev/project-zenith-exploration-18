@@ -144,7 +144,7 @@ export const Hero3DWebGL = () => {
         style={{
           backgroundImage: `url(https://cdn.poehali.dev/projects/63046c27-a9ca-47f8-936d-0a1da38c83de/bucket/d5281f44-51e2-444c-9099-69040c197646.jpeg)`,
           backgroundSize: '60%',
-          opacity: 0.15,
+          opacity: 0.35,
         }}
       />
 
